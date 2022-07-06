@@ -1,0 +1,1297 @@
+<!-- <div class="main-body">
+   
+    <div class="container-fluid">
+
+
+        <div class="page-header card">
+            <div class="row align-items-end">
+                <div class="col-lg-8">
+                    <div class="page-header-title">
+                        <i class=" feather bg-c-blue">
+                            <img src="../../../assets/img/user-plus-light.svg" alt="">
+                        </i>
+                        <div class="d-inline">
+                            <h5>User Registration</h5>
+                            <span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card pcoded-inner-content card-block">
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
+          </div>
+
+     
+
+    </div>
+
+</div> -->
+
+<div id="pcoded" class="pcoded">
+    <div class="pcoded-overlay-box"></div>
+    <div class="pcoded-container navbar-wrapper">
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <!-- [ navigation menu ] start -->
+                <form action="" method="post" name="userRegistration" id="userRegistration1">
+                    <!-- [ navigation menu ] end -->
+                    <div class="pcoded-content">
+                        <!-- [ breadcrumb ] start -->
+                        <div class="page-header card">
+                            <div class="row align-items-end">
+                                <div class="col-lg-8">
+                                    <div class="page-header-title">
+                                        <i class="feather bg-c-blue ">
+                                            <img src="../../../assets/img/user-plus-light.svg" alt="">
+                                        </i>
+                                        <div class="d-inline">
+                                            <a href="#" data-toggle="modal" data-target="#disclaimer">
+                                                <h5>User Registration</h5>
+                                            </a>
+                                            <!-- <span class=""><a href="/"><u>Home</u></a>
+                                                / User Registration </span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [ breadcrumb ] end -->
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page body start -->
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <!-- Victim Details start -->
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        
+                                                       
+                                                        <h5>Entity Details</h5>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">Entity Type<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <select name="entity_type" id="entity_type" class="form-control">
+                                                                                <option value="">--Select--</option>
+                                                                                <option value="PPI">Pre-Paid Instrument/Payment Banks</option>
+                                                                                <option value="LEA">Law Enforcement Agencies</option>
+                                                                                <option value="PYG">Payment Gateways</option>
+                                                                                <option value="ECO">E-Commerce Operators</option>
+                                                                                <option value="BNK">Banks</option> 
+                                                                                <option value="TAT">Tour &amp; Travel Operators</option>
+                                                                              </select>
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                                
+                                                            <div class="col-sm-6"   id="entity_data">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label"><span id='entitySubTypeCaption'>Entity Name</span><strong
+                                                                                style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <select name="entity" id="entity" class="form-control" id="">
+                                                                                <option value="">--Select--</option>
+                                                                                <span id="all_entities"></span>
+                                                                            </select>
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12"></div>
+                                                            </div>
+                                                        </div>
+                                                     
+                                                        <span id="other_data"  >
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">New Entity Name<strong style="color:red"><sup>*</sup></strong></label>
+                                                                            <div class="col-sm-9">
+                                                                                <input type="text" maxlength="50"   name="entity_name" id="entity_name" class="form-control" placeholder="Enter Entity Name">
+                                                                                <div style='color:red' class='error'></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                    <div class="col-sm-12">
+                                                                        &nbsp;
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">Organization Landline<strong style="color:red"><sup>*</sup></strong></label>
+                                                                            <div class="col-sm-3">
+                                                                                <input type="text" maxlength="4"  class="form-control" name="std_entity_landline" id="std_entity_landline" placeholder="Enter STD Code">
+                                                                                <div style="color:red" class="error"></div>
+                                                                            </div>
+                                                                            <div class="col-sm-6">
+                                                                                <input type="text" maxlength="8"   class="form-control" name="entity_landline" id="entity_landline"  placeholder="Enter Organization Landline Number">
+                                                                                <div style="color:red" class="error"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> 
+                                                                <div class="col-sm-6">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">Organization Email id<strong style="color:red"><sup>*</sup></strong></label>
+                                                                            <div class="col-sm-9">
+                                                                                <input type="email" maxlength="50" name="entity_email" id="entity_email" class="form-control" placeholder="Enter Organization Email id">
+                                                                                <div style="color:red" class="error"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>                                                                
+                                                            <div class="row">
+                                                                <div class="col-sm-6"> 
+                                                                    <div class="col-sm-12">      
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-3 col-form-label">Organization Website <strong style="color:red"><sup>*</sup></strong></label>
+                                                                            <div class="col-sm-9">
+                                                                                <input type="text" maxlength="50" name="entity_website_url" id="entity_website_url" class="form-control" placeholder="Enter Organization Website">
+                                                                                <div style="color:red" class="error"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- User Details Start -->
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>User Details</h5>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">Mobile No.<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" maxlength="10"  name="user_mobile" id="user_mobile" class="form-control" placeholder="Enter Mobile Number">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">First Name<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text"   maxlength="30" id="first_name" name="first_name" class="form-control" placeholder="Enter First Name">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">Last Name<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text"   maxlength="30" id="last_name" name="last_name" class="form-control" placeholder="Enter Last Name">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">Email<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="email" maxlength="50" name="user_email" id="user_email" class="form-control" placeholder="Enter Email">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">DOB</label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="date" name="dob" id="dob" class="form-control" placeholder="Enter DOB">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">Designation<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text"   maxlength="30" name="designation" id="designation" class="form-control" placeholder="Enter Designation">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">Gender<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <div class="form-radio">
+                                                                                <div class="radio radiofill radio-success radio-inline">
+                                                                                    <label>
+                                                                                        <input type="radio" name="gender" id="gender" value="Male" checked="checked">
+                                                                                        <i class="helper"></i>Male
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="radio radiofill radio-info radio-inline">
+                                                                                    <label>
+                                                                                        <input type="radio" name="gender" id="gender" value="Female">
+                                                                                        <i class="helper"></i>Female
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                 <!--Address Information start -->
+                                                 <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>Office Address</h5>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">Address Line1<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" maxlength="50"   name="address1" id="address1" class="form-control" placeholder="Enter Address Line1">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label
+                                                                            class="col-sm-3 col-form-label">Address Line2</label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" maxlength="50"   name="address2" id="address2" class="form-control" placeholder="Enter Address Line2">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">PIN Code<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" maxlength="6"  name="pincode" id="pincode" class="form-control" placeholder="Enter PIN Code">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">City<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" maxlength="30" style="color:grey" name="city" id="city" class="form-control" placeholder="Enter City">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">State<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" name="state" id="state" style="color:grey" class="form-control" placeholder="Enter State">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">District<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" style="color:grey" name="district" id="district" class="form-control" placeholder="Enter District">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 col-form-label">Country<strong style="color:red"><sup>*</sup></strong></label>
+                                                                        <div class="col-sm-9">
+                                                                            <input type="text" value="India" name="country" id="country" readonly style="color:grey" class="form-control" placeholder="Enter Country">
+                                                                            <div style='color:red' class='error'></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6"></div>
+                                                            <div class="col-sm-6"></div>
+                                                            <div class="col-sm-6"></div>
+                                                            <div class="col-sm-6"></div>
+                                                            <div class="col-sm-6"></div>
+                                                        </div>
+
+                                                        <!-- Modal -->
+                                                        <div class="modal fade" id="finalSubmit" tabindex="-1" role="dialog" aria-labelledby="finalSubmitLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="finalSubmitLabel">Verify OTP</h5>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        An OTP has been sent on your given Email Id (<span id="otp_email"></span>). Please verify and proceed.
+                                                                        &nbsp;
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        Enter OTP : <input type="text" name="verify_otp" maxlength="6" id="verify_otp" class="form-control" placeholder="Enter OTP">
+                                                                    </div>
+                                                                    <span style="color:red;margin-left: 20px;" id="otp_error"></span>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary" id="otp_verification">Verify & Proceed</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5>CyberSafe Plateform Usage Agreement</h5>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="form-group has-warning row">
+                                                            <label class="col-sm-2 col-form-label">Desclaimer</label>
+                                                            <div class="col-sm-10">
+                                                                <div class="col-xs-12 col-sm-12 edit-view-row-item">
+                                                                    <div class="col-xs-12 col-sm-2 label"
+                                                                        data-label="">&nbsp;</div>
+                                                                    <div class="col-xs-12 col-sm-8 edit-view-field "
+                                                                        type="" field="" colspan="3">
+                                                                        <div class="terms_and_conditions">                                                                                
+                                                                            <p align="center">CYBERSAFE PLATFORM USAGE AGREEMENT</p>
+                                                                            <p>
+                                                                                Cybersafe (hereinafter referred to as the “
+                                                                                <strong><em>Platform</em></strong>”
+                                                                                or “<strong><em>CYS</em></strong>”)
+                                                                                is
+                                                                                an online platform that facilitates
+                                                                                real-time information sharing
+                                                                                between
+                                                                                law enforcement agencies
+                                                                                (“<strong><em>LEA</em></strong>”)
+                                                                                and financial
+                                                                                services entities
+                                                                                (“<strong><em>Fin-tech
+                                                                                        Entities</em></strong>”) in
+                                                                                order
+                                                                                to record and collate information
+                                                                                pertaining to certain types of
+                                                                                financial
+                                                                                frauds.
+                                                                            </p>
+                                                                            <p>
+                                                                                The Platform is an intermediary
+                                                                                under the provisions of the
+                                                                                Information
+                                                                                Technology Act, 2000 hosting the
+                                                                                information of third parties over
+                                                                                which it
+                                                                                has no control whatsoever, and
+                                                                                accordingly, the Platform does not
+                                                                                control
+                                                                                any of the information accessible on
+                                                                                the Platform.
+                                                                            </p>
+                                                                            <p>
+                                                                                <!-- <img width="15" height="14"
+                                                                                    src="file:///C:/Users/DELLUSER/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg"
+                                                                                    align="left" hspace="12"> -->
+                                                                                This agreement
+                                                                                (“<strong><em>Agreement</em></strong>”),
+                                                                                along with CYS’
+                                                                                <a
+                                                                                    href="https://cybersafe.gov.in/Cybersafe/privacy_policy.pdf">
+                                                                                    Privacy Policy
+                                                                                </a>
+                                                                                and the Platform’s
+                                                                                <a
+                                                                                    href="https://cybersafe.gov.in/Cybersafe/terms_of_use.pdf">
+                                                                                    Terms of Use
+                                                                                </a>
+                                                                                (together, the “<strong><em>Platform
+                                                                                        Policies</em></strong>”),
+                                                                                which form
+                                                                                an integral part of this Agreement)
+                                                                                governs your use of the Platform,
+                                                                                and
+                                                                                sets out the basis on which the
+                                                                                Platform has been made available to
+                                                                                you by
+                                                                                the Financial Co-ordination Cell,
+                                                                                Ministry of Home Affairs
+                                                                                (“<strong><em>FCORD</em></strong>”).
+                                                                                By clicking the ( <em>I agree’
+                                                                                    button)</em> herein and / or
+                                                                                using the Platform or any related
+                                                                                service / application / software or
+                                                                                part thereof, you agree to accept
+                                                                                and
+                                                                                to be bound by (1) this Agreement,
+                                                                                and (2) the Platform Policies at all
+                                                                                times.
+                                                                            </p>
+                                                                            <p>
+                                                                                FCORD reserves the right to change,
+                                                                                modify, add or delete provisions in
+                                                                                this Agreement at any time, in
+                                                                                accordance with the procedures
+                                                                                described
+                                                                                below in Clause 8. Any capitalized
+                                                                                and undefined terms used in this
+                                                                                Agreement shall have the meanings
+                                                                                ascribed to them in the Platform’s
+                                                                                terms
+                                                                                of use.
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong>1. </strong>
+                                                                                <strong> Usage Rights</strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                1.1. You are hereby granted a
+                                                                                non-exclusive, non-transferable,
+                                                                                un-assignable, and non-commercial
+                                                                                right to use the Platform, for such
+                                                                                time
+                                                                                until either you or FCORD terminates
+                                                                                this Agreement under Clause 7.
+                                                                            </p>
+                                                                            <p>
+                                                                                1.2. In the event that any part of
+                                                                                the Platform comprises components
+                                                                                that
+                                                                                contain third party intellectual
+                                                                                property rights, we may require you
+                                                                                to
+                                                                                consent to their terms and
+                                                                                conditions, which may apply in
+                                                                                addition to this
+                                                                                Agreement and the Platform Policies.
+                                                                                You shall comply with such third
+                                                                                party
+                                                                                terms and conditions, if notified,
+                                                                                to the fullest extent.
+                                                                            </p>
+                                                                            <p>
+                                                                                1.3. You shall not, directly or
+                                                                                indirectly, (i) sell, rent out,
+                                                                                lease,
+                                                                                license, distribute, market, exploit
+                                                                                the Platform or any of its parts
+                                                                                commercially, (ii) reverse engineer,
+                                                                                decompile, disassemble, adapt,
+                                                                                reproduce, or create derivative
+                                                                                works of this Platform, (iii)
+                                                                                remove,
+                                                                                alter, disable or circumvent any
+                                                                                copyright or trademark indications
+                                                                                or
+                                                                                other authorship and origin
+                                                                                information, or (iv) export or
+                                                                                re-export this
+                                                                                Platform or any copy of adaptation
+                                                                                in violation of any applicable laws
+                                                                                or
+                                                                                regulations.
+                                                                            </p>
+                                                                            <p>
+                                                                                1.4. While using the Platform, you
+                                                                                agree to comply will all applicable
+                                                                                laws, rules and regulations. In all
+                                                                                cases, you may only use the Platform
+                                                                                according to the intended use of the
+                                                                                Platform. Without any limitation of
+                                                                                FCORD’s rights to take action
+                                                                                against you for prohibited usage of
+                                                                                the
+                                                                                Platform, you may not:
+                                                                            </p>
+                                                                            <p>
+                                                                                a. use any of the data on the
+                                                                                Platform, including any information
+                                                                                within
+                                                                                the centralised negative incident
+                                                                                database (i.e. the “
+                                                                                <strong><em>Negative
+                                                                                        List</em></strong>” made
+                                                                                available to you on the
+                                                                                Platform) and any other results /
+                                                                                data / information / details that is
+                                                                                accessible by you on the Platform (“
+                                                                                <strong><em>Platform
+                                                                                        Information</em></strong>”)
+                                                                                for any purpose other than
+                                                                                analysis, updation, reference, and
+                                                                                record-keeping. It is expressly
+                                                                                clarified herein, and agreed and
+                                                                                understood by you, that the Platform
+                                                                                Information cannot be construed,
+                                                                                treated as, relied upon or produced
+                                                                                as
+                                                                                evidence in a court of law or in any
+                                                                                legal proceeding.
+                                                                            </p>
+                                                                            <p>
+                                                                                b. create, use, share and/or
+                                                                                publish, by any means any material
+                                                                                (text,
+                                                                                words, images, etc.) related to or
+                                                                                available on the Platform, which
+                                                                                would
+                                                                                be a breach of your confidentiality
+                                                                                obligations, infringe any
+                                                                                intellectual
+                                                                                property right, violate an
+                                                                                individual’s right to privacy, or
+                                                                                which would
+                                                                                incite the committing of an unlawful
+                                                                                act (in particular, piracy, cracking
+                                                                                or circulation of counterfeit
+                                                                                software);
+                                                                            </p>
+                                                                            <p>
+                                                                                c. modify, distort, block,
+                                                                                abnormally burden, disrupt, slow
+                                                                                down and/or
+                                                                                hinder the normal functioning of all
+                                                                                or part of the Platform, or their
+                                                                                accessibility to other users, or the
+                                                                                functioning of the partner networks
+                                                                                of
+                                                                                the Platform, or attempt to do any
+                                                                                of the above;
+                                                                            </p>
+                                                                            <p>
+                                                                                d. transmit or propagate any virus,
+                                                                                bug, corrupted file and/or similar
+                                                                                destructive device or corrupted data
+                                                                                in relation to the Platform, and/or
+                                                                                organise, participate in or be
+                                                                                involved in any way in an attack on
+                                                                                CYS’s
+                                                                                servers and/or the Platform and/or
+                                                                                the digital resources of its service
+                                                                                providers and partners;
+                                                                            </p>
+                                                                            <p>
+                                                                                e. create, supply or use alternative
+                                                                                methods of using the Platforms, such
+                                                                                as server emulators;
+                                                                            </p>
+                                                                            <p>
+                                                                                f. falsely claim to be an employee
+                                                                                or representative of FCORD or CYS,
+                                                                                or
+                                                                                its partners or agents; and
+                                                                            </p>
+                                                                            <p>
+                                                                                g. falsely claim an endorsement in
+                                                                                connection with the Platform or with
+                                                                                FCORD or CYS.
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong>2. </strong>
+                                                                                <strong>Intellectual
+                                                                                    Property</strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                2.1. All title, interest and
+                                                                                ownership rights over the
+                                                                                intellectual
+                                                                                property in and to the Platform
+                                                                                (including, without limitation, all
+                                                                                text,
+                                                                                graphics, information, data,
+                                                                                Platform Information, and any other
+                                                                                elements
+                                                                                which are part of the Platform,
+                                                                                individually or in combination) and
+                                                                                any and
+                                                                                all copies thereof, vest in and are
+                                                                                the sole and exclusive property of
+                                                                                FCORD. The Platform is protected by
+                                                                                national and international laws,
+                                                                                copyright treaties and conventions
+                                                                                and other laws aimed at protecting
+                                                                                intellectual property rights. Except
+                                                                                as expressly set forth in this
+                                                                                Agreement, all rights not granted
+                                                                                hereunder to you are expressly
+                                                                                reserved
+                                                                                by and retained with FCORD.
+                                                                            </p>
+                                                                            <p>
+                                                                                2.2. Nothing in the terms hereof
+                                                                                gives any you the right to use any
+                                                                                of
+                                                                                FCORD’s trade names, trademarks,
+                                                                                service marks, logos, domain names,
+                                                                                and
+                                                                                other distinctive brand features in
+                                                                                any manner, including on any reports
+                                                                                or
+                                                                                documents that you may request on
+                                                                                the Platform.
+                                                                            </p>
+                                                                            <p>
+                                                                                2.3. This Agreement confers no title
+                                                                                or ownership in the Platform or the
+                                                                                Platform Information on you, and
+                                                                                should not be construed as an
+                                                                                assignment
+                                                                                or transfer of any rights thereof.
+                                                                            </p>
+                                                                            <p>
+                                                                                2.4. The Platform Information that
+                                                                                you provide may be used to
+                                                                                supplement
+                                                                                the Negative Lists, and for such
+                                                                                other purposes as may be determined
+                                                                                by
+                                                                                FCORD in its sole discretion.
+                                                                            </p>
+                                                                            <p>
+                                                                                2.5. In the event that you request
+                                                                                FCORD to delete your account on the
+                                                                                Platform, the Platform Information
+                                                                                obtained from you, along with any
+                                                                                results from the processing of such
+                                                                                data, shall continue to remain on
+                                                                                the
+                                                                                Platform and may be accessible by
+                                                                                other users on the Platform.
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong>3. </strong>
+                                                                                <strong>Access to the
+                                                                                    Platform</strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                3.1. You shall have to register on
+                                                                                the Platform in order to avail the
+                                                                                services therein, which may require
+                                                                                the provision of your official
+                                                                                e-mail
+                                                                                address hosted on your
+                                                                                organisation’s domain, mobile
+                                                                                number, details of
+                                                                                entity type, registered address,
+                                                                                details of nodal officers, etc. By
+                                                                                doing
+                                                                                so, you will have created an admin
+                                                                                account for your organisation which
+                                                                                may
+                                                                                be accessed by you or your
+                                                                                authorized L2 and L3 Users.
+                                                                            </p>
+                                                                            <p>
+                                                                                3.2. The Platform may be accessed by
+                                                                                you on a computer system or a mobile
+                                                                                device through application stores,
+                                                                                including Google Play and the Apple
+                                                                                App
+                                                                                Store.
+                                                                            </p>
+                                                                            <p>
+                                                                                a. <strong>Integration:</strong>
+                                                                                Access to the Platform under this
+                                                                                Agreement would require integrating
+                                                                                your portal with the Platform, which
+                                                                                may require the installation of
+                                                                                certain software. The Fin-tech
+                                                                                Entities
+                                                                                shall satisfy themselves with the
+                                                                                quality of integration and the
+                                                                                connectivity prior to the
+                                                                                installation of the same. There will
+                                                                                be a single
+                                                                                instance of the Platform, and your
+                                                                                portal will be integrated with this
+                                                                                instance.<u></u>
+                                                                            </p>
+                                                                            <p>
+                                                                                The integration of the Platform is
+                                                                                for the purposes as set forth in
+                                                                                this
+                                                                                Agreement. The Fin-tech Entity will
+                                                                                appoint an L2 and/ or L3 user for
+                                                                                all
+                                                                                interaction with FCORD or CYS, as
+                                                                                the case maybe with respect to the
+                                                                                Platform who would be focal point
+                                                                                for all integration.
+                                                                            </p>
+                                                                            <p>
+                                                                                b. <strong>Platform Access:</strong>
+                                                                                To use the Platform on a computer or
+                                                                                a
+                                                                                mobile device, you must have access
+                                                                                to an electronic communication
+                                                                                network.
+                                                                                The connection costs (including but
+                                                                                not limited to mobile providers’
+                                                                                and/or
+                                                                                carriers’ costs), shall be
+                                                                                exclusively borne by you. You
+                                                                                acknowledge that
+                                                                                the quality of the Platforms, the
+                                                                                response time or access to certain
+                                                                                features may depend on the
+                                                                                capacities of your computer or
+                                                                                mobile device and
+                                                                                of the electronic communication
+                                                                                network.
+                                                                            </p>
+                                                                            <p>
+                                                                                c. <strong>Collection of personal
+                                                                                    data:</strong> FCORD may collect
+                                                                                and
+                                                                                store data about you, including such
+                                                                                data in relation to your use of the
+                                                                                Platform, your connection
+                                                                                information, your computer or mobile
+                                                                                device, IP
+                                                                                address, geo-location, cache, which
+                                                                                may be analysed, processed and
+                                                                                archived
+                                                                                for such purposes that are in
+                                                                                compliance with applicable law.
+                                                                            </p>
+                                                                            <p>
+                                                                                d. <strong>Sharing of Data</strong>:
+                                                                                FCORD may be under a duty to
+                                                                                disclose
+                                                                                or share your data in order to
+                                                                                comply with a legal obligation, or
+                                                                                in order
+                                                                                to protect FCORD’s rights and those
+                                                                                of other users and third parties.
+                                                                                Certain types of Platform
+                                                                                Information may be accessed by third
+                                                                                parties
+                                                                                using the Platform. For further
+                                                                                information concerning FCORD’s
+                                                                                collection
+                                                                                and use of your data, please refer
+                                                                                to the CYS
+                                                                                <a
+                                                                                    href="https://cybersafe.gov.in/Cybersafe/privacy_policy.pdf">
+                                                                                    Privacy Policy
+                                                                                </a>
+                                                                                .
+                                                                            </p>
+                                                                            <p>
+                                                                                e. <strong>Incident
+                                                                                    Tickets:</strong> Upon
+                                                                                submission of Platform
+                                                                                Information by LEAs, an Incident
+                                                                                Ticket will be assigned to L2 and L3
+                                                                                Users
+                                                                                by CYS. All such Incident Tickets
+                                                                                created on the Platform shall be
+                                                                                visible
+                                                                                to L2 and L3 Users of the Fin-tech
+                                                                                Entity. <u></u>
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong>4. </strong>
+                                                                                <strong>Disclaimers</strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                4.1. The Platform, and the Platform
+                                                                                Information, is available to you on
+                                                                                an
+                                                                                ‘as is’ basis, without any
+                                                                                representation or warranties,
+                                                                                express or
+                                                                                implied. FCORD further expressly
+                                                                                disclaims all representations and
+                                                                                warranties of any kind with regard
+                                                                                to the Platform, including, but not
+                                                                                limited to the implied warranties
+                                                                                and conditions of merchantability,
+                                                                                fitness for a particular purpose and
+                                                                                non-infringement of any third party
+                                                                                intellectual property rights.
+                                                                            </p>
+                                                                            <p>
+                                                                                4.2. FCORD does not represent or
+                                                                                warrant to you that: (a) your use of
+                                                                                the
+                                                                                Platform will meet your
+                                                                                requirements, (b) your use of the
+                                                                                offering will be
+                                                                                uninterrupted, timely, secure or
+                                                                                free from error, including
+                                                                                specifically
+                                                                                from server downtime, and (c) any
+                                                                                information obtained by you as a
+                                                                                result
+                                                                                of your use of the offering will be
+                                                                                accurate or reliable.
+                                                                            </p>
+                                                                            <p>
+                                                                                4.3. FCORD does not make any
+                                                                                guarantees, conditions, warranties
+                                                                                of any
+                                                                                kind, express, implied or statutory
+                                                                                or other terms including as to (a)
+                                                                                conformity, accuracy, correctness,
+                                                                                completeness, or reliability of the
+                                                                                Negative List (b) its suitability
+                                                                                for a particular use; (c) implied
+                                                                                warranties of title,
+                                                                                non-infringement. FCORD does not
+                                                                                warrant that the
+                                                                                Platform will be uninterrupted or
+                                                                                error-free, that defects will be
+                                                                                corrected, or that the Platform is
+                                                                                free of viruses or other harmful
+                                                                                components. You assume all
+                                                                                responsibility for selecting the
+                                                                                Platform to
+                                                                                achieve your intended results, and
+                                                                                for the installation, use, and use
+                                                                                of
+                                                                                results obtained from the Platform.
+                                                                                You are solely responsible for the
+                                                                                use
+                                                                                of any information that you provide
+                                                                                to the Platform, and FCORD shall not
+                                                                                be
+                                                                                liable in any manner for such
+                                                                                information.
+                                                                            </p>
+                                                                            <p>
+                                                                                4.4. The Negative List is created
+                                                                                with information submitted by LEAs
+                                                                                and
+                                                                                may be supplemented with information
+                                                                                that is provided by you, and such
+                                                                                representation of this information
+                                                                                on the Platform is intended to
+                                                                                assist
+                                                                                users of the Platform with
+                                                                                record-keeping and informational
+                                                                                purposes only.
+                                                                                It is clarified that the Negative
+                                                                                List is not intended to impugn, in
+                                                                                any
+                                                                                manner, any person whose details may
+                                                                                appear on the Negative List.
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong>5. </strong>
+                                                                                <strong>Limitation of
+                                                                                    Liability</strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                5.1. You expressly understand and
+                                                                                agree that in no event will FCORD,
+                                                                                FCORD’s licensors, channel partners
+                                                                                and associated service providers,
+                                                                                partners, and employees be liable
+                                                                                for any loss or damage suffered in
+                                                                                connection with the use of the
+                                                                                Platform or any related third party
+                                                                                service.
+                                                                                This includes without limitation (a)
+                                                                                all losses of any kind, whether in
+                                                                                tort (including for negligence or
+                                                                                breach of statutory duty), contract,
+                                                                                misrepresentation (whether innocent
+                                                                                or negligent) or otherwise, (b)
+                                                                                direct
+                                                                                loss; (c) accidental loss, (d)
+                                                                                incidental loss, (e) consequential
+                                                                                loss, and
+                                                                                (f) indirect loss. Such limitation
+                                                                                of liability shall apply whether the
+                                                                                damages arise from the use, misuse,
+                                                                                or reliance on the Platform, from
+                                                                                inability to use the Platform, or
+                                                                                from the interruption, suspension or
+                                                                                termination of the use of the
+                                                                                Platform.
+                                                                            </p>
+                                                                            <p>
+                                                                                5.2. For purposes of this Clause,
+                                                                                FCORD’s licensors, channel partners
+                                                                                and
+                                                                                associated service providers are
+                                                                                third party beneficiaries to the
+                                                                                limitations of liability specified
+                                                                                herein and they may enforce this
+                                                                                Agreement against you.
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong>6. </strong>
+                                                                                <strong>Indemnity</strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                6.1. You are solely responsible for
+                                                                                any damage caused to FCORD, its
+                                                                                licensors, channel partners and
+                                                                                associated service providers and
+                                                                                subcontractors, other users of the
+                                                                                Platform or any other individual or
+                                                                                legal entity as a result of your
+                                                                                violation of this Agreement.
+                                                                            </p>
+                                                                            <p>
+                                                                                6.2. You hereby agree to defend,
+                                                                                indemnify and keep indemnified FCORD
+                                                                                and
+                                                                                its affiliates, their licensors,
+                                                                                channel partners and associated
+                                                                                service
+                                                                                providers and their subcontractors
+                                                                                against any claim or alleged claims,
+                                                                                liabilities, losses damages and all
+                                                                                costs (including lawyers’ fees),
+                                                                                directly or indirectly attributable
+                                                                                to your fault and/or resulting from
+                                                                                (a)
+                                                                                a violation of any provision of this
+                                                                                Agreement, or (b) your use or misuse
+                                                                                of the Platform. FCORD reserves the
+                                                                                right to take sole responsibility,
+                                                                                at
+                                                                                your expense, for conducting the
+                                                                                defence of any claim for which you
+                                                                                agreed
+                                                                                to indemnify FCORD. The provisions
+                                                                                of this Clause shall remain in force
+                                                                                after termination of this Agreement.
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong>7. </strong>
+                                                                                <strong>Termination</strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                7.1. This Agreement is effective
+                                                                                from the date you register yourself
+                                                                                as a
+                                                                                Fin-tech Entity on the Platform, and
+                                                                                shall remain valid until terminated
+                                                                                according to the terms herein.
+                                                                            </p>
+                                                                            <p>
+                                                                                7.2. FCORD may terminate your use of
+                                                                                the Platform at any time if: (i) it
+                                                                                believes, in its sole and absolute
+                                                                                discretion, that you have infringed,
+                                                                                breached, violated, abused, or
+                                                                                unethically manipulated or exploited
+                                                                                any
+                                                                                term of this Agreement or the
+                                                                                Platform Policies, or any feature of
+                                                                                the
+                                                                                Platform, or (ii) it is required to
+                                                                                do so under applicable law. This
+                                                                                Agreement shall continue to survive
+                                                                                thereafter, governing all past
+                                                                                conduct
+                                                                                and usage of the Platform.
+                                                                            </p>
+                                                                            <p>
+                                                                                7.3. Upon termination for any
+                                                                                reason, you must immediately
+                                                                                uninstall the
+                                                                                Platform and destroy all copies of
+                                                                                the Platform in your possession.
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong></strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong>8. </strong>
+                                                                                <strong>Updates</strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong></strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                8.1. FCORD reserves the right, in
+                                                                                its sole and absolute discretion, to
+                                                                                revise, update, change, modify, add
+                                                                                to, supplement, or delete certain
+                                                                                terms
+                                                                                of this Agreement, or the Platform
+                                                                                Policies, for security, legal, best
+                                                                                practice or regulatory reasons. Such
+                                                                                changes will be effective with or,
+                                                                                as
+                                                                                applicable, with reasonable prior
+                                                                                notice to you as far as is
+                                                                                practicable.
+                                                                                You can review the most current
+                                                                                version of this Agreement by
+                                                                                clicking on
+                                                                                the “Agreement” link located on the
+                                                                                Platform on clicking
+                                                                                <a
+                                                                                    href="https://cybersafe.gov.in/Cybersafe/index.php">
+                                                                                    Terms &amp; Conditions
+                                                                                </a>
+                                                                                . <em></em>
+                                                                            </p>
+                                                                            <p>
+                                                                                <em></em>
+                                                                            </p>
+                                                                            <p>
+                                                                                8.2. You are responsible for
+                                                                                checking this Agreement periodically
+                                                                                for
+                                                                                changes. If any future changes to
+                                                                                this Agreement are unacceptable to
+                                                                                you or
+                                                                                cause you to no longer be in
+                                                                                agreement or compliance with this
+                                                                                Agreement,
+                                                                                you may terminate this Agreement in
+                                                                                accordance with Clause 8 and must
+                                                                                immediately uninstall the Platform
+                                                                                and destroy all copies of the
+                                                                                Platform.
+                                                                                Your continued use of the Platform
+                                                                                following any revision to this
+                                                                                Agreement
+                                                                                constitutes your complete and
+                                                                                irrevocable acceptance of any and
+                                                                                all such
+                                                                                changes.<em></em>
+                                                                            </p>
+                                                                            <p>
+                                                                                8.3. FCORD may modify the Platform
+                                                                                for any reason or without any
+                                                                                specific
+                                                                                reason, at any time and at its
+                                                                                entire discretion, in particular for
+                                                                                technical reasons such as updates,
+                                                                                maintenance operations and/or resets
+                                                                                to
+                                                                                improve and/or optimize the
+                                                                                Platform. You agree that the
+                                                                                Platform may
+                                                                                install or download the
+                                                                                modifications automatically.
+                                                                            </p>
+                                                                            <p>
+                                                                                <strong>9. </strong>
+                                                                                <strong>Miscellaneous</strong>
+                                                                            </p>
+                                                                            <p>
+                                                                                9.1. <strong>Entire
+                                                                                    Agreement</strong>: This
+                                                                                Agreement, along with the
+                                                                                Platform Policies which form an
+                                                                                integral part hereof, constitutes
+                                                                                the
+                                                                                entire agreement, and supersedes all
+                                                                                prior oral and written
+                                                                                understandings,
+                                                                                between the parties regarding the
+                                                                                subject matter hereof.
+                                                                            </p>
+                                                                            <p>
+                                                                                9.2.
+                                                                                <strong>Confidentiality:</strong>
+                                                                                You are required to keep strictly
+                                                                                confidential, without disclosing to
+                                                                                any unauthorised person, all
+                                                                                information pertaining to your
+                                                                                account on the Platform and all
+                                                                                information
+                                                                                accessed on the Platform. You shall
+                                                                                be solely responsible for any
+                                                                                unauthorised usage of your account
+                                                                                on the Platform.
+                                                                            </p>
+                                                                            <p>
+                                                                                <u></u>
+                                                                            </p>
+                                                                            <p>
+                                                                                9.3. <strong>Severance:</strong> If
+                                                                                any court of competent jurisdiction
+                                                                                or
+                                                                                competent authority finds that any
+                                                                                provision of this Agreement is
+                                                                                invalid,
+                                                                                illegal or unenforceable, that
+                                                                                provision or part-provision shall,
+                                                                                to the
+                                                                                extent required, be deemed to be
+                                                                                deleted, and the validity and
+                                                                                enforceability of the other
+                                                                                provisions of this Agreement shall
+                                                                                not be
+                                                                                affected. If any invalid,
+                                                                                unenforceable or illegal provision
+                                                                                of this
+                                                                                Agreement would be valid,
+                                                                                enforceable and legal if some part
+                                                                                of it were
+                                                                                deleted, the provision shall apply
+                                                                                with the minimum modification
+                                                                                necessary
+                                                                                to make it legal, valid and
+                                                                                enforceable to reflect FCORD’s
+                                                                                initial
+                                                                                intentions.
+                                                                            </p>
+                                                                            <p>
+                                                                                9.4. <strong>No Waiver:</strong> No
+                                                                                failure or delay by FCORD (or its
+                                                                                licensors) to exercise any right or
+                                                                                remedy provided under this Agreement
+                                                                                or
+                                                                                by law shall constitute a waiver of
+                                                                                that or any other right or remedy,
+                                                                                nor
+                                                                                shall it preclude or restrict the
+                                                                                further exercise of that or any
+                                                                                other
+                                                                                right or remedy. No single or
+                                                                                partial exercise of such right or
+                                                                                remedy
+                                                                                shall preclude or restrict the
+                                                                                further exercise of that or any
+                                                                                other right
+                                                                                or remedy. Waiver of a right or
+                                                                                remedy may be considered to have
+                                                                                taken
+                                                                                place only after signing a written
+                                                                                statement to this effect by FCORD or
+                                                                                by
+                                                                                you.
+                                                                            </p>
+                                                                            <p>
+                                                                                9.5. <strong>Law and
+                                                                                    Jurisdiction:</strong> This
+                                                                                Agreement will be governed
+                                                                                by and construed in accordance with
+                                                                                the laws of India, and the courts of
+                                                                                New Delhi, India shall have
+                                                                                exclusive jurisdiction over any
+                                                                                dispute arising
+                                                                                out of the subject matter of this
+                                                                                Agreement.
+                                                                            </p>
+                                                                            <p>
+                                                                                <u></u>
+                                                                            </p>
+                                                                            <p>
+                                                                                9.6. <strong>Conflict:</strong> To
+                                                                                the extent that the provisions of
+                                                                                this
+                                                                                Agreement are in conflict with the
+                                                                                provisions of the Platform Policies,
+                                                                                the
+                                                                                provisions in the Platform Policies
+                                                                                shall prevail.
+                                                                            </p>
+                                                                            <p align="center">
+                                                                                *****<a name="_GoBack"></a>
+                                                                            </p>
+                                                                        </div><br>
+                                                                        <div class="tersm_and_conditions  ">
+                                                                            <input type="checkbox" name="is_accepted" id="is_accepted" style="margin-bottom:5px;" value="yes">
+                                                                            <strong>&nbsp;&nbsp;agree to the UsageAgreement</strong>
+                                                                            <a href="https://cybersafe.gov.in:10443/Cybersafe/usage_agreement_fin_tech.pdf" id="terms_and_conditions_link" download="" style="margin-left: 100px;"><strong>Download Usage Agreement</strong></a>
+                                                                        </div>
+                                                                        <span id="is_accepted1" style="color:red"></span>
+                                                                    </div>
+                                                                    <!-- [/hide] -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 col-xl-2 m-b-30">
+                                                            </div>
+                                                            <div class="col-sm-8 m-b-30  text-center">
+                                                                <div style="margin-top: 50px;">
+                                                                    <input type="button" name="save_user" 
+                                                                    value="Submit" class="btn btn-primary" style="width: 15%; margin: 10px;">
+                                                                    <a href="https://cybersafe.gov.in:10443/" class="btn btn-primary">Back</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>      
+        </div>
+    </div>
+</div>
